@@ -73,22 +73,7 @@ arrow   db  " --> ", 0
 segment .text
     GLOBAL hanoi
 hanoi:
-    enter   16 , 0          ; 4 parameters: n, plate1, plate2, plate3,
-    ; push    ebp
-    ; mov     ebp, esp
-
-    ; mov     eax, [ebp + 20]
-    ; call    print_int
-    ; call    print_nl
-    ; mov     eax, [ebp + 12]
-    ; call    print_int
-    ; call    print_nl
-    ; mov     eax, [ebp + 16]
-    ; call    print_int
-    ; call    print_nl
-    ; mov     eax, [ebp + 20]
-    ; call    print_int
-    ; call    print_nl
+    enter   16 , 0          ; 4 parameters: n, plate1, plate2, plate3
 
     mov     eax, [ebp + 20]
     cmp     eax, 1
